@@ -23,6 +23,7 @@ export class HomePage implements AfterViewInit {
 
     CameraPreview.start({
       position: 'rear',
+      disableAudio: true,
       toBack: true,
     }).finally(() =>
       (async () => {
